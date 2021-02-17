@@ -1,5 +1,7 @@
 # https://ambmt.xyz
 
+# Need help?
+Join the support server: https://discord.gg/WeggTXYFhd
 
 <!-- PROJECT LOGO -->
 <br />
