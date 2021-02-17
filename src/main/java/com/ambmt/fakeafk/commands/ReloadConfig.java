@@ -41,9 +41,9 @@ public class ReloadConfig implements CommandExecutor {
     }
 
     public boolean hasReload(Player player) {
-        if (player.hasPermission("afk.reload")) {
+        if (player.hasPermission("fakeafk.reload")) {
             return true;
-        } else if (player.hasPermission("afk.admin")) {
+        } else if (player.hasPermission("fakeafk.admin")) {
             return true;
         }
         return false;

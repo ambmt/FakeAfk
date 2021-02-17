@@ -17,15 +17,25 @@ public class afkOff implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        Player p = (Player) sender;
-        String disable = plugin.getConfig().getString("broadcastdisable");
-        p.sendMessage(plugin.getConfig().getString("cmddisable"));
-        Bukkit.broadcastMessage(ChatColor.GRAY + "* " + p.getDisplayName() + " " + ChatColor.GRAY + disable);
-
-
+        Player player = (Player) sender;
+        if(hasPermissions(player)) {
+            String disable = plugin.getConfig().getString("broadcastdisable");
+            player.sendMessage(plugin.getConfig().getString("cmddisable"));
+            Bukkit.broadcastMessage(ChatColor.GRAY + "* " + player.getDisplayName() + " " + ChatColor.GRAY + disable);
+        }else{
+            player.sendMessage(ChatColor.WHITE + "Unknown Command. Type \"/help\" for help.");
+        }
 
 
         return false;
     }
-
+    public boolean hasPermissions(Player player) {
+        if (player.hasPermission("fakeafk.afkoff")) {
+            return true;
+        } else if (player.hasPermission("fakeafk.admin")) {
+            return true;
+        }
+        return false;
+    }
 }
+

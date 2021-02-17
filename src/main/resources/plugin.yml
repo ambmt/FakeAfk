@@ -6,7 +6,26 @@ description: FakeAfk which hooks into essentials
 website: ambmt.xyz
 commands:
   fakeafkon:
+    description:
+      Turns fake afk on
   fakeafkoff:
+    description:
+      Turns fake afk off
   fakeafkreload:
+    description:
+      Reloads the fakeafk config
 permissions:
+  fakeafk.admin:
+    description:
+      Allows for player to use any command
+  fakeafk.reload:
+    description:
+      Allows for player to reload config
+  fakeafk.on:
+    description:
+      Allows for player to turn on afk
+  fakeafk.off:
+    description:
+      Allows player to turn off afk
+
 
