@@ -1,0 +1,12 @@
+name: FakeAfk
+version: ${project.version}
+main: com.ambmt.fakeafk.fakeAfk
+authors: [ ambmt ]
+description: FakeAfk which hooks into essentials
+website: ambmt.xyz
+commands:
+  fakeafkon:
+  fakeafkoff:
+  fakeafkreload:
+permissions:
+

@@ -1,0 +1,5 @@
+cmdenable: You have enabled FakeAFK
+cmddisable: You have disabled FakeAFK
+broadcastenable: is now AFK
+broadcastdisable: is no longer AFK
+#Will be formatted like : %player% + broadcastenable since im lazy
